@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: php-app
-        image: arifislam/php-app:21_5
+        image: arifislam/php-custom-image:v1
         ports:
         - containerPort: 80
