@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: php-service
+  namespace: phpapp
+spec:
+  selector:
+    app: php-app
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 30090  # Optional: Specify a custom NodePort (must be between 30000-32767)
+  type: NodePort
+
